@@ -1,0 +1,10 @@
+import connectMongoDB from "@/libs/mongodb"
+import { NextResponse } from "next/server"
+import Topic from '@/models/topic.js'
+
+export async function POST(req){
+    const {title,description} = await req.json()
+    await connectMongoDB()
+    await Topic.create({title,description})
+    return NextResponse.json({message:'Topic Created'},{status:201})
+}
