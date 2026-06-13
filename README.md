@@ -28,14 +28,14 @@ rename layout.js -> layout.jsx
   
 page.jsx:  
 delete everything inside the return()  
-add <h1>Hello World</h1> inside the return()  
+add `<h1>Hello World</h1>` inside the return()  
   
 global.css: delete everything  
   
 create new folder '/components'  
 at the ROOT LEVEL / NOT inside the '/app' directory  
   
-  
+
 
   
 

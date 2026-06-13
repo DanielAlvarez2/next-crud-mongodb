@@ -4,10 +4,16 @@ export default function Navbar(){
     return(
         <nav style={{   display:'flex',
                         padding:'10px 20px',
+                        marginBottom:'10px',
                         justifyContent:'space-between',
                         alignItems:'center',
                         background:'black'}}>
-            <Link href={'/'} style={{color:'white',fontWeight:'900'}} >GTCoding</Link>
+            <Link   href={'/'} 
+                    style={{color:'white',
+                            fontSize:'30px',
+                            fontWeight:'900'}} >
+                GTCoding
+            </Link>
             <Link href={'/addTopic'} style={{   background:'white',
                                                 padding:'5px 10px',
                                                 borderRadius:'5px',
