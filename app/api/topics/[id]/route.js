@@ -16,6 +16,17 @@ export async function PUT(req,{params}){
     }
 }
 
+export async function GET(req,{params}){
+    try{
+        await connectMongoDB()
+        const {id} = await params
+        const topic = await Topic.findOne({_id: id})
+        return NextResponse.json({topic},{status:200})
+    }catch{
+
+    }
+}
+
 
 
 
