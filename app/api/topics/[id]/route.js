@@ -7,10 +7,7 @@ export async function PUT(req,{params}){
         await connectMongoDB()
         const {id} = await params
         const body = await req.json()
-        await Topic.findByIdAndUpdate(
-            id,
-            body
-        )
+        await Topic.findByIdAndUpdate(id,body)
         return NextResponse.json({
             message:"Topic Updated"
         })
