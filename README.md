@@ -3,6 +3,7 @@ YouTube
 [Step-by-Step Guide: Create a Next.js 13 CRUD App with MongoDB from Scratch](https://www.youtube.com/watch?v=wNWyMsrpbz0&t=0s)  
 GTCoding  
 1h:02m:44s  
+  
 Progress:  
 38m:44s  
 CRUD API fully functional  
